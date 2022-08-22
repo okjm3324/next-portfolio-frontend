@@ -1,0 +1,16 @@
+.tag {
+display:flex;
+align-items: center;
+  height: 30px;
+  width:70px;
+  border-radius: 7px;
+  border:2px solid  #fb8c00;
+}
+
+.tag-text {
+  color:#fb8c00;
+  margin:auto;
+  font-weight: normal;
+
+  font-size: 12px;
+}

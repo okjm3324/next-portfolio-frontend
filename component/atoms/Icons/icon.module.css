@@ -1,0 +1,22 @@
+.menu-icon{
+  cursor: pointer;
+  fill:rgb(67, 67, 71);
+  transition: all 0.3s ease 0s;
+ }
+ 
+ .menu-icon:hover {
+   fill: #fb8c00 !important
+ }
+
+ .card-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+ }
+ .card-icon a {
+   margin: 0 3px;
+   font-weight: bold
+ }
+
+

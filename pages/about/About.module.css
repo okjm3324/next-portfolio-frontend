@@ -1,0 +1,32 @@
+.about-container {
+  width: 100%;
+  height: auto;
+  min-height: 672px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #dcdcdc;
+  /*background-color: rgb(229, 224, 233);*/
+}
+
+.about-item {
+  margin-top: 100px;
+  width: 50%;
+  justify-content:start;
+}
+.about-ul {
+  list-style:circle;
+}
+
+.back-link {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-weight: bold;
+  color:rgb(67, 67, 71);
+  font-size: 30px;
+
+}
+.back-link:hover{
+  opacity: 0.5;
+} 

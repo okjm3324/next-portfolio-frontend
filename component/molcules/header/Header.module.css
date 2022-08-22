@@ -1,0 +1,186 @@
+
+
+
+.header{
+  position: sticky;
+height: 263px;
+  top:0;
+  background-color: #dcdcdc;
+  height: auto;
+  z-index: 10;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.header-title  {
+font-size: 70px;
+color:rgb(67, 67, 71);
+font-weight: bold;
+margin:12px 12px;
+
+}
+@media (max-width:990px){
+  .header-title {
+    font-size: 70px;
+    color:rgb(67, 67, 71);
+    font-weight: bold;
+    margin:12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-items {
+    display: none;
+    
+  
+  }
+}
+
+.menu-items {
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  margin-right: 32px;
+
+}
+@media (max-width:990px){
+.menu-items {
+  display: none;
+}
+
+}
+
+.mobile-menu-items {
+  display: none;
+}
+.mobile-menu-item {
+  display: none;
+}
+
+@media (max-width:990px){
+  .mobile-menu-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:200px;
+    width: 100%;
+    right: 0;
+    background-color: #181818;
+    justify-content: center;
+    align-content: center;
+  }
+  .mobile-menu-item {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    
+  }
+
+}
+
+
+
+
+ 
+
+
+
+
+
+.menu-item {
+justify-content: center;
+  cursor: pointer;
+}
+
+
+
+.menu-item {
+  margin-top: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.menu {
+  font-size: 28px;
+  color:rgb(67, 67, 71);
+  transition: color 0.3s ease 0s;
+  text-decoration: none;
+
+}
+.menu:hover{
+  color:#fb8c00 ;
+}
+
+.snslogo-items {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ margin:32px;
+}
+@media (max-width:990px){
+  .snslogo-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:32px;
+    margin-right: 12%;
+   }
+}
+
+.snslogo-item {
+  margin-left: 50px;
+  font-size: 12px;
+ 
+}
+
+.menu-logo{
+  width: 32px;
+  height: 32px;
+  margin-top: 30px;
+  cursor: pointer;
+  object-fit: cover;
+  
+}
+
+
+.anim-hr{
+ 
+  display:block;
+  width:80%;
+  height:2px;
+  background:rgb(239, 239, 245);
+  border-radius: 7px;
+  border:none;
+  animation:2s ease-in 1s infinite alternate forwards running expansion;
+}
+@keyframes expansion{
+  0%{
+    width:97%;
+  }
+  100%{
+    width:100%;
+    background:rgb(166, 166, 170);
+  }
+}
+
+.hamburgerIcon {
+  display: none;
+}
+@media (max-width:990px){
+  .hamburgerIcon {
+    display:flex;
+    position:absolute;
+    right: 3%;
+    top:5%;
+    cursor: pointer;
+   }
+
+}

@@ -1,0 +1,93 @@
+
+
+
+.header{
+  position: sticky;
+
+  top:0;
+  background-color: #dcdcdc;
+  height: 270px;
+  z-index: 10;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header-title  {
+font-size: 70px;
+color:rgb(67, 67, 71);
+font-weight: bold;
+margin:12px 12px;
+
+}
+
+.menu-items {
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  margin-right: 32px;
+
+}
+
+.menu-item {
+  margin-top: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.menu {
+  font-size: 28px;
+  color:rgb(67, 67, 71);
+  transition: color 0.3s ease 0s;
+  text-decoration: none;
+
+}
+.menu:hover{
+  color:#fb8c00 ;
+}
+
+.snslogo-items {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ margin:32px;
+}
+
+.snslogo-item {
+  margin-left: 50px;
+  font-size: 12px;
+ 
+}
+
+.menu-logo{
+  width: 32px;
+  height: 32px;
+  margin-top: 30px;
+  cursor: pointer;
+  object-fit: cover;
+  
+}
+
+
+.anim-hr{
+ 
+  display:block;
+  width:80%;
+  height:2px;
+  background:rgb(239, 239, 245);
+  border-radius: 7px;
+  border:none;
+  animation:2s ease-in 1s infinite alternate forwards running expansion;
+}
+@keyframes expansion{
+  0%{
+    width:97%;
+  }
+  100%{
+    width:100%;
+    background:rgb(166, 166, 170);
+  }
+}

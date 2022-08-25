@@ -30,7 +30,7 @@ module.exports = () => {
     }
     
   }
-  //return {rewrites}
+  return {rewrites}
 }
 
 //getStaticPropsのJSONファイルのシリアライズのため

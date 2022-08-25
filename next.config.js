@@ -6,17 +6,30 @@
 
 module.exports = nextConfig**/
 
+
+
 module.exports = () => {
 
   const rewrites = () =>{
-    return [
-      {
-        source: "/posts",
-        destination: "http://localhost:5000/api/posts",
-      }
-    ]
+    if (process.env.NODE_ENV === 'production'){
+      return [
+        {
+          source: `${process.env.API_BASE_URL}/api/posts`,
+          destination: "http://localhost:5000/api/posts",
+        }
+      ]
+
+    }else{
+      return [
+        {
+          source: "/posts",
+          destination: "http://localhost:5000/api/posts",
+        }
+      ]
+    }
+    
   }
-  return {rewrites}
+  //return {rewrites}
 }
 
 //getStaticPropsのJSONファイルのシリアライズのため

@@ -24,7 +24,7 @@ module.exports = () => {
       return [
         {
           source: "/posts",
-          destination: `${process.env.API_BASE_URL}/api/posts`,
+          destination: "http://localhost:5000/api/posts",
         }
       ]
     }

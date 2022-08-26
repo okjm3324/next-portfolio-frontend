@@ -11,7 +11,8 @@ import MediaQuery from "react-responsive"
 //SSG
 
 export async function getStaticProps () {
-  const response = await axios.get("http://localhost:5000/api/posts")
+  const url = process.env.API_BASE_URL ? `${process.env.API_BASE_URL}/api/posts` :"http://localhost:5000/api/posts"
+  const response = await axios.get(url)
   const allPostsData=  response.data
   
   return {props:{allPostsData}}

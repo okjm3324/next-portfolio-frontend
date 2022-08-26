@@ -15,7 +15,8 @@ import Footer from "../../component/molcules/footer/Footer"
 
 // //SSGの全てのパス設定
 export async function getStaticPaths () {
-    const res = await axios.get("http://localhost:5000/api/posts")
+     const url = process.env.API_BASE_URL ? `${process.env.API_BASE_URL}/api/posts` :"http://localhost:5000/api/posts"
+    const res = await axios.get(url)
     
     const allPostsData = res.data
     const allFileId = allPostsData.map((post)=>{return post.id})

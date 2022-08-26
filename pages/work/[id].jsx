@@ -30,7 +30,8 @@ export async function getStaticPaths () {
 
 // //SSGのprops設定
  export async function getStaticProps ({params}){
-   const res = await axios.get(`http://localhost:5000/api/posts/${params.id}`)
+  const url = process.env.API_BASE_URL ? `${process.env.API_BASE_URL}api/posts` :"http://localhost:5000/api/posts"
+   const res = await axios.get(`${url}/${params.id}`)
    const postData = JSON.parse(JSON.stringify(res.data));
    return {
     props : {

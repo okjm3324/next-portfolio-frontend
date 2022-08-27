@@ -1,7 +1,7 @@
 .about-container {
   width: 100%;
   height: auto;
-  min-height: 672px;
+  min-height: 700px;
   display:flex;
   flex-direction: column;
   align-items: center;
